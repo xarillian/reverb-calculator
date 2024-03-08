@@ -1,15 +1,21 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
 
+# Build outputs
+/dist/
+/build/
+
+# compiled code
+*.js
+*.js.map
+
+# editor directories
+.vscode/
+
 # testing
 /coverage
-
-# production
-/build
 
 # misc
 .DS_Store
