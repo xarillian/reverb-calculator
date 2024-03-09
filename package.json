@@ -1,5 +1,8 @@
 {
   "name": "reverb-calculator",
+  "appId": "com.xarillian.reverb-calculator",
+  "author": "xarillian",
+  "description": "calculate Reverb Decay and Pre-Delay",
   "homepage": ".",
   "version": "0.1.0",
   "private": true,
@@ -20,15 +23,22 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-  "main": "electron-starter.js",
+  "build": {
+    "win": {
+      "icon": "public/rodney.jpg"
+    }
+  },
+  "main": "public/electron.js",
   "scripts": {
     "start": "react-scripts start",
     "start-app": "electron .",
-    "build-css": "npx tailwindcss -o src/tailwind.output.css --minify", 
+    "build-css": "npx tailwindcss -o src/tailwind.output.css --minify",
     "prebuild": "npm run build-css",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +59,7 @@
     ]
   },
   "devDependencies": {
-    "electron": "^29.1.1"
+    "electron": "^29.1.1",
+    "electron-builder": "^24.13.3"
   }
 }

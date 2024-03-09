@@ -6,6 +6,7 @@
 # Build outputs
 /dist/
 /build/
+*.exe
 
 # compiled code
 *.js
