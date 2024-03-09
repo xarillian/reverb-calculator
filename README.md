@@ -1,5 +1,7 @@
 # Reverb Calculator
 
+[Download](https://github.com/xarillian/reverb-calculator/releases/tag/release-1.0.0)
+
 Enter BPM in the box and get Reverb Decay and Reverb Pre-Delay.
 
 1. Reverb Decay formula
