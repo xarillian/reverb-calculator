@@ -21,6 +21,7 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-, "electron-starter.ts"  ]
+    "src", 
+    "electron-starter.js"  
+  ]
 }
